@@ -1,5 +1,5 @@
 import parliament
 
-test = parliament.Parliament("2011")
+canada = parliament.Parliament("2011")
 
-test.get_party_seats("2011")
+canada.get_party_seats("2011")

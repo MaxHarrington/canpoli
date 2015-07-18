@@ -46,7 +46,7 @@ class Riding:
 
                     # ends checking process if the last candidate is the same as the first one
                     # also does not include independents, as multiple independents can run in one riding
-                    if first_candidate == last_candidate and first_candidate != "Independent":
+                    if first_candidate == last_candidate:
                         break
 
                     candidate_list.append(temp)
@@ -62,8 +62,8 @@ class Riding:
             counter += 1
 
             # resets the counter, as it will match the ordering and length of the candidate list
-            if counter == len(candidate_list):
-                counter = 0;
+            if counter is len(candidate_list):
+                counter = 0
 
         # creates a dictionary, combining the values with party names
         for x in range(0, len(candidate_list)):
