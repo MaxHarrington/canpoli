@@ -1,0 +1,5 @@
+# Ignore IntelliJ IDEA stuff
+.idea
+*.iml
+# Ignore CSV files
+*.csv
