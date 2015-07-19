@@ -5,6 +5,7 @@ class ElectorNumber:
         self.file_list = list()
         self.num_list = list()
 
+    # gets the file names of each CSV file within the 'data' directory
     def get_file_names(self, year, province):
         for file in os.listdir("data/" + year + "/" + province):
             if file.endswith(".csv"):

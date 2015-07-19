@@ -1,5 +1,18 @@
 import parliament
 
-canada = parliament.Parliament("2011")
+def get_tallies(year):
+    canada = parliament.Parliament("2008")
 
-canada.get_party_seats("2011")
+    seat_values = list(canada.get_party_seats("2008").values())
+
+    seat_tallies = dict()
+
+    for seats in seat_values:
+        seat_tallies[seats] = 0
+
+    for seats in seat_values:
+        seat_tallies[seats] += 1
+
+    print(seat_tallies)
+
+get_tallies("2008")
