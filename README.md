@@ -1,2 +1,2 @@
 #Elections Canada CSV Processor
-Using the official election data from Elections Canada (, this app will parse the 308 CSV files that constitute the bedrock of our democracy: the riding. It will list off which riding each party won.
+Using the official election data from Elections Canada (<a href='http://www.elections.ca/scripts/OVR2011/34/data_donnees/pollresults_resultatsbureau_canada.zip'>found here</a>, this app will parse the 308 CSV files that constitute the bedrock of our democracy: the riding. It will produce a dictionary of which riding each party won, pairing the party name with the electoral number of the riding. The electoral number acts as the key in the dict.
